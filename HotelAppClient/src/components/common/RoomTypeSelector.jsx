@@ -29,8 +29,9 @@ export const RoomTypeSelector = ({handleRoomInputChange, newRoom}) => {
     {roomTypes.length > 0 && (
         <div>
             <select
-             id = 'roomType'
-             name ='roomType' 
+             className='form-control'
+             id = "roomType"
+             name ="roomType"
              value = {newRoom.roomTypes} 
              onChange={(e) =>{
                 if(e.target.value === "Add New"){
@@ -49,15 +50,15 @@ export const RoomTypeSelector = ({handleRoomInputChange, newRoom}) => {
                 ))}
             </select>
             {showNewRoomTypeInput && (
-                <div className='input-group'>
-                    <input className='form-control' 
-                     type='text' 
-                     placeholder='Enter a new room type' 
+                <div className="input-group mt-2">
+                    <input className="form-control" 
+                     type="text"
+                     placeholder="Enter a new room type" 
                      onChange={handleNewRoomTypeInputChange}
                     />
                     <button 
-                     className='btn btn-hotel' 
-                     type='button' 
+                     className="btn btn-hotel"
+                     type="button" 
                      onClick={handleAddNewRoomType}
                     >
                         Add
