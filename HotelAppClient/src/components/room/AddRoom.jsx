@@ -6,7 +6,7 @@ function AddRoom() {
   const [newRoom, setNewRoom] = useState({
     photo: null,
     roomType: "",
-    roomPrice: ""
+    roomPrice: null
   })
 
   const [imagePreview, setImagePreview] = useState("")
